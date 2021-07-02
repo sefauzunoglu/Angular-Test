@@ -1,4 +1,4 @@
-<h3 class="bg-primary text-white p-2">{{categoryName}} Kategorisi</h3>
+<h3 class="bg-primary text-white p-2">{{getCatName()}} Kategorisi</h3>
 
 <table class="table table-border table-striped">
 
@@ -12,8 +12,7 @@
   </thead>
 
   <tbody>
-
-    <tr *ngFor="let p of products" [class.bg-secondary]="p.isActive == false">
+    <tr *ngFor="let p of getProducts()" [class.bg-secondary]="p.isActive == false">
       <!-- tr nin classına bg-secondary'i ekleyeceğiz ancak hangi durumda o an ulaşmış olduğumuz p objesinin isActive alanı eğer false ise -->
       <td>{{p.id}}</td>
       <td>{{p.name}}</td>
@@ -23,6 +22,6 @@
         <button class="btn btn-danger">Delete</button>
       </td>
     </tr>
-
   </tbody>
+
 </table>

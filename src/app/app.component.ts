@@ -10,15 +10,15 @@ import { Model } from './model';
 export class AppComponent {
   title = 'SocialApp';
 
-  model = new Model();
+  // model = new Model();
 
-  // model bilgisi içerisindeki bilgilere ulaşmak için ise;
+  // // model bilgisi içerisindeki bilgilere ulaşmak için ise;
 
-  getCatName() {
-    return this.model.categoryName;
-  }
+  // getCatName() {
+  //   return this.model.categoryName;
+  // }
 
-  getProducts() {
-    return this.model.products;
-  }
+  // getProducts() {
+  //   return this.model.products;
+  // } 
 }
